@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+            break : dừng vòng lặp : 
+            return: dùng trong hàm
+                    trả về kết quả của hàm.
+         */
+
+        function checkLogin() {
+            let check = false;
+            console.log("tiến hành kiểm tra tài khoản đã login!");
+            return true;
+        }
+        if (checkLogin()) {
+            console.log("user đã đăng nhập");
+
+        } else {
+            console.log("chưa đăng nhập");
+        }
+
+        let users = ["hoa", "hồng", "nhung", "thu"];
+        // viết hàm kiểm tra xem mảng users có người tên nhung k
+
+        function findUser(arr) {
+            let result = users.find((item) => item == "nhung1")
+            return result
+        }
+        console.log(findUser(users));
+        /* 
+            find
+            findIndex
+            fillter
+            map
+            reduce
+            forEach
+        */
+
+        // đệ quy
+        function deQuy(number) {
+            if (number == 1) return 1
+            return number + deQuy(--number)
+        }
+        console.log(111111, deQuy(10));
+
+
+
+
+    </script>
+</body>
+
+</html>

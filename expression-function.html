@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- expression function -->
+    <script>
+        let result = function loginUser() {
+            console.log("hàm đăng nhập tài khoản!");
+        }
+        result();
+        // setTimeout(() => {
+        //     console.log("xin chào!");
+
+        // }, 3000);
+        // setInterval(() => {
+        //     console.log("good!");
+
+        // }, 2000);
+        //IIFE ( immedeately invoked function expression!)
+        (() => {
+            console.log("hàm IIFE!");
+        })();
+        (function test() {
+            console.log("xin chào!");
+
+        })()
+    </script>
+</body>
+
+</html>

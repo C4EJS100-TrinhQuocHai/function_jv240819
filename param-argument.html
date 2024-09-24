@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // tham số (param)
+        // đối số (argument) : khi gọi hàm truyền giá trị vào 
+        // viết chương trình tính tổng 2 số bất kì 
+
+        function sum(numberA, numberB) {
+            console.log("tổng 2 số ", numberA + numberB);
+
+        }
+        sum("hoa", 6);
+        sum(7, 8);
+        // viết chương trình nhập vào nhiều vào và tính tổng các giá trị trong mảng
+
+        function sumArray(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            console.log("tổng là:", sum);
+        }
+        let test1 = [1, 2, 3, 4, 5];
+        let test2 = [7, 8, 9, 10];
+        console.log(sumArray(test1));
+        console.log(sumArray(test2));
+
+
+    </script>
+</body>
+
+</html>
